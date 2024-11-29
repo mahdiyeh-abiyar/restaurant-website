@@ -1,0 +1,897 @@
+
+*{
+    font-family:Yekan Bakh FaNum;
+
+}
+body{
+    height: 100%;
+    margin: 0;
+    /* font-family:B Homa; */
+}
+/* ------------------------START HOME PAGE------------------------- */
+
+header{
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+ /* Start Navbar Area  */
+    
+    nav li{
+        display: inline-block;
+        list-style: none;
+        padding: 20px;
+        position: relative;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        transition: color 0.5s ease;
+    }
+    
+
+    nav a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffbe00;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+    }
+    
+    nav a:hover {
+        color: #ffbe00;
+    }
+    
+    nav a:hover::after {
+        transform: scaleX(1);
+    }
+ /* End Navbar Area  */
+
+ /* Start Common Classes */
+    .center{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .btn{
+        font-size: 16px;
+        color: #201d52;
+        border-radius: 50px;
+        background-color: #ffbe00;
+        padding: 12px 32px;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+    .hover:hover{
+        background-color: #ff8e2c;
+        color: #fff;
+    }
+    .section-title{
+        margin-top: 90px;
+    }
+    p{
+        color: gray;
+    }
+    ul{
+        list-style: none;
+    }
+    .form-control {
+        height: 45px;
+        padding: 10px 10px 2px;
+        font-size: 15px;
+        color: #777777;
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+/* End Common Classes */
+
+
+/* Start Main Page Banner */
+    .banner{
+        max-width: 49%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .banner-content h1{
+        font-weight: 700;
+        font-size: 60px;
+        margin-bottom: 20px;
+
+    }
+    .banner-content p{
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+    .searchBar input{
+        display: block;
+        width: 80%;
+        color: #495057;
+        background-color: #fff;
+        user-select: text;
+        font-size: 16px;
+        border: 0;
+        border-radius: 50px;
+        box-shadow: 0px 0px 20px 0px #dddddd5c;
+        height: 50px;
+        padding: 10px 30px 10px 50px;
+    }
+    .searchBar-btn{
+        position: absolute;
+        left: 740px;
+        top: 101.5%;
+        transform:translateY(-50%);
+    }
+/* End Home Page Banner */
+
+
+/* Start Home Page Banner Ad */
+    .banner-ad{
+        background-color: #0b0320;
+        color: #f8e7e3;
+        padding: 30px;
+    }
+    .ad-content{
+        text-align: right;
+        margin-right: 10%;
+        line-height: 9px;
+    }
+    .ad-content span{
+        font-size: 20px;
+        color: #ff8e2c;
+    }
+    .ad-content h2{
+        font-size: 40px;
+    }
+/* End Home Page Banner Ad */
+
+
+.section-title span{
+    color: #ff8e2c;
+    font-size: 30px;
+}
+.section-title h2{
+    color: #201d52;
+    font-size: 30px;
+}
+
+/* Start Home Page Features Section */
+    .container-box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin-right: 20px;
+    }
+    .box{
+        background-color: #fff;
+        border:0;
+        box-shadow: 4px 4px 20px 0px #dddddd5c;
+        width: 90%;
+        height: 250px;
+        text-align: center;
+        padding: 20px;
+    }
+/* End Home Page Features Section */
+
+
+/* Start Home Page Feautured Categories Section */
+    .ImagLinkBox{
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+    }
+    .Box{
+        border: 1px solid #f8e7e3;
+        border-radius: 50px;
+        background-color: #f7f7fb;
+        width: 95%;
+        height: 43px;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        right: 0;
+        margin: 30px 10px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .Box li{
+        list-style: none;
+        display: inline-block;
+    }
+    .Box img{
+        position: relative;
+        top: 4px;
+    }
+    .Box span{
+        text-align: center;
+    }
+/* End Home Page Feautured Categories Section */
+
+
+/* Start Home Page Marvi Section */
+    .marvi{
+        max-width: 40%;
+    }
+    .marvi-content {
+        overflow: hidden;
+        margin-bottom: px;
+    }
+    .marvi-img{
+        float: left;
+        margin-right: 20px;
+        height: auto;
+        margin-top: 75px;
+    }
+    .marvi-shap{
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        top: 3200px;
+        vertical-align:middle;
+    }
+/* End Home Page Marvi Section */
+
+/* Start Home Page Blog Section */
+    .blog-item{
+        margin-top: -59px;
+        margin-bottom: 100px;
+    }
+    .Blog{
+        background-color: #f8f7fd;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 25%;
+        overflow: hidden;
+        /* text-align: center; */
+    }
+    .blog-top img{
+        width: 100%;
+        height: auto;
+    }
+    .blog-top span{
+        background-color: #FFCC00;
+        padding: 4px 8px;
+        border-radius: 5px;
+        font-size: 0.8em;
+        color:#201d52;
+        display: inline-block;
+    }
+    .blog-bottom{
+        padding: 15px;
+    }
+/* End Home Page Blog Section */
+
+/* Start Foteer Section */
+    .footer-section {
+        font-family: Arial, sans-serif;
+        margin: 0 ;
+        padding: 0;
+        direction: rtl;
+        width: 20%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 20px 50px 20px ;
+        background-color: #0b0320;
+        
+    }
+
+    .footer-section h3 {
+        margin-bottom: 15px;
+        color: #ff8e2c;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section li {
+        margin-bottom: 10px;
+        color: #f8e7e3;
+        transition: color 0.5s ease, transform 0.5s ease;
+    }
+    .footer-section li::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: FFCC00;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+    }
+    
+    .footer-section li:hover {
+        color: #ff8e2c;
+        transform: translateY(-2px);
+    }
+    
+    .footer li:hover::after {
+        transform: scaleX(1);
+    }
+    .footer-section li>span{
+        margin-left: 10px;
+    }
+
+    .logo {
+        align-items: center;
+        margin: 20px 20px 20px 40px;
+        width: 20%;
+    }
+
+    .logo img {
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .logo p {
+        color: #f8e7e3;
+    }
+/* End Foteer Section */
+
+
+/* ------------------------END HOME PAGE------------------------- */
+
+
+
+
+
+/* ------------------------START SERVICES PAGE------------------------- */
+
+/* Start Services Page Callection Food Section */
+    .filters{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .filter{ 
+        text-decoration: none;
+        font-size: 15px;
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* انیمیشن‌ها */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    .filter:hover {
+        background-color: #201d52; /* تغییر رنگ پس‌زمینه در حالت hover */
+        transform: translateY(-3px); /* بالا کشیدن به سمت بالا */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* افزایش سایه */
+    }
+    
+
+    .collection-item{
+        border:0;
+        box-shadow: 4px 4px 20px 0px #dddddd5c;
+        border-radius: 10px 10px 0 0 ;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin: 20px;
+        position: relative;
+    }
+    .collection-top{
+        position: relative;
+    }
+    .collection-item .collection-top img{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .collection-item .collection-bottom {
+        padding: 15px 10px 17px;
+    }
+    .collection-item .collection-bottom h3 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .collection-item .item {
+        margin: 0;
+        padding: 0;
+        display: flex
+    }
+    .collection-item .item span{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .collection-item .item span .number {
+        display: inline-block;
+    }
+    .collection-item .item>span {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        color: #fe3333;
+        position: relative;
+        top: 4px;
+    }
+    .collection-item .number {
+        text-align: left;
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .minus , .plus {
+        line-height: 36px;
+        width: 35px;
+        line-height: 35px;
+        height: 35px;
+        color: #ffffff;
+        background-color: #fbdb7d;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 0;
+        vertical-align: middle;
+        transition: 0.5s all ease;
+        border-radius: 10px;
+        top: 0;
+    }
+    .number input {
+        height: 25px;
+        width: 50px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border: 0;
+        color: #ffbe00;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -4px;
+        margin-right: -4px;  
+    }
+/* End Services Page Callection Food Section  */
+
+/* Start Services Page Food List Section */
+    .container{
+        display:inline-block;
+        width: 28%;
+        margin: 20px;
+    }
+    .menu{
+        flex: 0 0 33.333333%;
+        /* max-width: 33.333333%; */
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        transform: skew(-10deg -10deg);
+        transition-duration:1s ;
+
+    }
+    .menu-item:hover{
+        background-color: #ffbe00;
+        color: #201d52;
+
+    }
+    .menu-item {
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: #ffffff;
+        padding: 45px 30px 42px;
+        border-radius: 18px;
+        position: relative;
+        transition: 0.5s all ease;
+        border: 1px solid #ffbe00;
+    }
+    .menu-item .menu-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 50;
+        margin-bottom: 0;
+        transition: 0.5s all ease;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-item img {
+        margin-bottom: 22px;
+    }
+    .menu-item h3 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 0;
+        transition: 0.5s all ease;
+    }
+/* End Services Page Food List Section     */
+
+/* Start Services Page Reservation Section */
+    .reservation_area{
+        background-color: #0b0320;
+        border-radius: 0 100px 0 0;
+        height: 50%;
+        margin-top: 10%;
+    }
+    .reservation-item{
+        color: #f7f7fb;
+    }
+    .reservation-form{
+        padding: 10px;
+        border: 0;
+        background-color: #fff;
+        border-radius: 80px;
+        box-shadow: 4px 4px 20px 0px #dddddd5c;
+    }
+    .reservation-form ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .form-control {
+        width: 165px;
+        display: block;
+        padding: .375rem .75rem;
+        margin: 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius:50px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    .reservation-form ul li input{
+        text-align: center;
+        margin-right: -10px;
+    } 
+    
+
+/* End Services Page Reservation Section */
+
+
+/* ------------------------END SERVICES PAGE------------------------- */
+
+
+
+
+/* ------------------------START ABOUT PAGE------------------------- */
+    .chef-item {
+        margin-bottom: 50px;
+        margin: 2% 2% 5% 2%;
+        text-align: center;
+        flex: 0 0 20%;
+        max-width: 25%;
+    }
+    .chef-item .chef-top {
+        position: relative;
+        border-radius: 10px 10px 0 0;
+    }
+    .chef-item .chef-top img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .chef-inner {
+        background-color: #0b0320bf;
+        color: #f7f7fb;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 10px 12px;
+        position: absolute;
+        /* left: 0;
+        right: 0; */
+        bottom: 0;
+        width: 18.6%;
+        
+    }
+    .chef-item .chef-top .chef-inner h3 {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+
+    .story-img{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        /* margin-top: 50px; */
+        height: 100%;
+
+    }
+    .story-img img{
+        margin: 10px;
+    }
+    .story-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 3% 3% 15% 3%;
+    }
+    .story-content .story-quote .quote-info {
+        position: relative;
+        margin-top: 30px;
+        padding-right: 85px;
+        padding-top: 10px;
+    }
+    .story-content .story-quote .quote-info img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+    .story-content .story-quote .quote-info h3 {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        margin-top: -8PX;
+        color: #000000;
+    }
+    .quote-info span {
+        display: block;
+        color: #999999;
+    }
+
+/* ------------------------END ABOUT PAGE------------------------- */
+
+
+/* ------------------------START CONTANT PAGE------------------------- */
+
+/* Start Contact Page Comment Section */
+
+    .Comment_form{
+        display: flex;
+    }
+
+    .review-img {
+        margin-top: 10%;
+        position: relative;
+        width: 50%;
+    }
+    .review-img img:nth-child(1) {
+        position: relative;
+    }
+    .review-img img:nth-child(2) {
+        right: unset;
+        left: 0;
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+
+
+
+    .Form{
+        width: 50%;
+        margin-top: 9%;
+        margin-left: 5%;
+    }
+    #contactForm {
+        background: #ffffff;
+        box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+        padding: 40px;
+        border-radius: 5px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+
+    }
+    .form-group input {
+        outline: #ffbe00;
+        border: 1px solid #ffbe00;
+        border-radius: 50px;
+        width: 80%;
+        text-align: center;
+    }
+    .form-group textarea {
+        border: 1px solid #ffbe00;
+        border-radius: 50px;
+        width: 80%;
+        text-align: center;
+
+    }
+
+    .submit_button{
+        width: 100%;
+    }
+
+    .submit_button button {
+        color: #ffffff;
+        background-color: #ffbe00;
+        border-color: #ffbe00;
+        position: relative;
+        z-index: 1;
+        transition: .6s;
+        /* flex: 0 0 100%; */
+        max-width: 100%;
+        width: 100%;
+    }
+/* End Contact Page Comment Section */
+
+
+
+
+/* Start Contact Page Subscribe Section */
+
+    .subscribe-area {
+    background-color: #0b0320;
+    border-radius: 0 100px 0 0;
+    position: relative;
+    }
+
+    .subscribe-shape img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .subscribe-form{
+        display: flex;
+    }
+    .subscribe-item {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-right: 5%;
+    }
+    .subscribe-item .section-title h2{
+        color: #f8e7e3;
+    }
+    .newsletter-form {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .newsletter-form button {
+        position: absolute;
+        top: 3.5%;
+        right: 65%;
+        display: block;
+        width: 100px;
+        font-size: 15px;
+        padding: 3px 0;
+        margin-top: 10px;
+        margin-right: 5%;
+        height: 42px;
+        
+    }
+    .newsletter-form input {
+        width: 80%;
+        height: 50px;
+        padding: 10px 15px 10px 30px;
+        border-radius: 50px;
+        background-color: #ffffff;
+        border: 0;
+        font-size: 16px;
+        padding: 10px 30px 10px 15px;
+    }
+    .subscribe-img {
+        text-align: center;
+    }
+    .subscribe-img img{
+        width: 80%;
+        margin-top: 20%;
+    }
+
+/* End Contact Page Subscribe Section */
+
+
+
+
+
+
+
+
+
+
+
+
+/* dark mode button */
+
+  
+  .b {
+    display: block;
+  }
+  
+  .toggle {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    width: 60px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #ddd;
+    margin: -20px -40px;
+    overflow: hidden;
+    box-shadow: inset 0 0 2px 1px rgba(0,0,0,.05);
+  }
+  
+  .check {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 6;
+  }
+  
+    .check:checked ~ .track {
+      box-shadow: inset 0 0 0 20px #201d52;
+    }
+  
+    .check:checked ~ .switch {
+      right: 2px;
+      left: 22px;
+      transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+      transition-property: left, right;
+      transition-delay: .05s, 0s;
+    }
+  
+  .switch {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    right: 22px;
+    background-color: #fff;
+    border-radius: 36px;
+    z-index: 1;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-property: left, right;
+    transition-delay: 0s, .05s;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  }
+  
+  .track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    box-shadow: inset 0 0 0 2px rgba(0,0,0,.05);
+    border-radius: 40px;
+  }
+
+
+
+  /* -- Scroll Button -- */
+
+  #scrollButton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background-color: #aab396;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+  #scrollButton:hover{
+    background-color: #60694c;
+  }
+
+
+
+
+
+
+
+
+
+
+  
